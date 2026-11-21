@@ -1,0 +1,24 @@
+.courseSummary, .courseModule { padding: 24px; }
+.courseSummary { display: grid; gap: 16px; margin-bottom: 24px; justify-items: start; }
+.courseSummary progress { width: 100%; accent-color: var(--deep); }
+.courseModules { display: grid; gap: 16px; }
+.courseModule { display: flex; align-items: center; gap: 16px; }
+.courseModule > div { flex: 1; min-width: 0; }
+.courseModule h2, .courseSummary h2, .lessonTheory h3 { font-size: 20px; line-height: 28px; font-weight: 600; text-wrap: balance; }
+.courseModule p, .courseSummary p, .lessonTheory p, .simulationBox p { font-size: 16px; line-height: 24px; text-wrap: pretty; }
+.courseModule p { color: var(--muted); margin-top: 8px; }
+.lessonTheory { background: var(--sub); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.evidence, .simulationBox pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: var(--mono); font-size: 14px; line-height: 20px; background: var(--sub); padding: 16px; border: 1px solid var(--border); border-radius: 8px; margin: 16px 0; }
+.exerciseOptions { border: 1px solid var(--border); border-radius: 8px; padding: 16px; display: grid; gap: 12px; }
+.taskBody .exerciseOptions label { display: flex; align-items: start; gap: 12px; font-size: 16px; line-height: 24px; cursor: pointer; }
+.taskBody .exerciseOptions input[type=radio] { width: auto; margin: 4px 0 0; flex: 0 0 auto; accent-color: var(--deep); }
+.simulationBox { margin-bottom: 16px; }
+.orderChoices { display: flex; flex-wrap: wrap; gap: 8px; }
+.orderChoices button { padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--sub); font-size: 14px; line-height: 20px; }
+.orderChoices button:hover:not(:disabled) { background: var(--tint); }
+.orderChoices button:active:not(:disabled) { transform: scale(.98); }
+.courseModule button:disabled, .taskTitle:disabled, .orderChoices button:disabled { cursor: not-allowed; }
+@media (max-width: 600px) {
+  .courseModule { flex-wrap: wrap; padding: 16px; }
+  .courseModule > button { width: 100%; }
+}

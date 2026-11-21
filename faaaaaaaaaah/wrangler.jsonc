@@ -1,0 +1,17 @@
+{
+  "name": "cyberlime21",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-21",
+  "workers_dev": true,
+  "vars": {
+    "GOOGLE_CLIENT_ID": "440279742374-fahagoehl1s2cr7tcniie43abrvh4e05.apps.googleusercontent.com"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cyberlime-db",
+      "database_id": "21a39df0-736b-4c69-a4ca-b87479b72f37",
+      "migrations_dir": "drizzle"
+    }
+  ]
+}
